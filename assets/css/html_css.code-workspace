@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../w3s_Band"
+		},
+		{
+			"path": "../../../shopee"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demo"
+	}
+}

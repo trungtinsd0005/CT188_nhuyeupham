@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar--has-QR header__navbar-item--separate">
+                            Tải ứng dụng
+                            <div class="header__navbar-qrcode">
+                                <img src="./assets/img/qr_code.png" alt="QR" class="qr-img">
+                                <div class="header__navbar-qrapps">
+                                    <a href="" class="qrcode-download-link">
+                                        <img src="./assets/img/appstore.png" alt="" class="download-img">
+                                    </a>
+                                    <a href="" class="qrcode-download-link">
+                                        <img src="./assets/img/ch_play.png" alt="" class="download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="no-pointer__no-hover">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-youtube"></i>
+                            </a>
+                            
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__notify-has">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/notifycahoi.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Cá hồi Nauy</span>
+                                                <span class="header__notify-des">Cá hồi được nhập khẩu từ Nauy với hàm lượng dinh dưỡng cao</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/gaost25.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Gạo sóc trăng ST25</span>
+                                                <span class="header__notify-des">Gạo ST25 được đánh giá là gạo ngon nhất thế giới</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/duigatoi.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Đùi gà tỏi</span>
+                                                <span class="header__notify-des">Đùi gà tỏi được nhập khẩu từ Mỹ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="js-dangky header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="js-dangnhap header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <i class="header__navbar-icon fa-solid fa-user"></i>
+                            <span class="name-user">Tin</span>
+                            
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài Khoản Của Tôi</a>
+                                </li>
+
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn Đặt Hàng</a>
+                                </li>
+
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <img src="./assets/img/walmartLogo.svg" alt="" class="header-logo">
+                    
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Tìm các nhu yếu phẩm tại thanh tìm kiếm này">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+
+                    <div class="header__cart">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span class="number-cart">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <div class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-bars"></i>
+                                Danh mục sản phẩm
+                            </div>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thịt, Cá, Trứng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Rau Củ, Trái Cây</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Kem, Thực Phẩm Đông Lạnh</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Mì, Miến, Cháo, Phở</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Gạo, Bột</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Dầu Ăn, Gia Vị</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bia, Nước Giải Khát</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sữa Các Loại</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bánh Kẹo Các Loại</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Vệ Sinh Cá Nhân</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đồ Dùng Gia Đình</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="grid__column-10">
+                         <div class="groupcate">
+                            <h4 class="groupcate-name">Nhóm hàng thường mua</h4>
+                            <div class="groupcate-list">
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/8781/bhx/thit-heo-cac-loai-202212051413082532.v202302081331.png" alt="Thit heo">
+                                    <span>Thịt heo</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/10298/bhx/rau-cu-trai-cay-202205261519146845.v202302081530.png" alt="Rau cu">
+                                    <span>Rau củ</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/2289/bhx/nuoc-mam-202212051441046889.v202302081530.png" alt="Sua tuoi">
+                                    <span>Nước mắm</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/2565/bhx/mi-an-lien-202209301456432997.v202302081530.png" alt="Mi an lien">
+                                    <span>Mì ăn liền</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/2386/bhx/sua-tuoi-202210311320147075.v202302081530.png" alt="Sua tuoi">
+                                    <span>Sữa tươi</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://ss-hn.fptvds.vn/images/2022/trung-ga-ta-sach-o-lala-hop-10_3c51b921-c6e4-4d4d-aac1-b7ca8e796581-og-thumb-1.jpg" alt="Sua tuoi">
+                                    <span>Trứng</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/2464/bhx/nuoc-giat-202212061451308788.v202302081331.png" alt="Sua tuoi">
+                                    <span>Nước giặt</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/2443/bhx/nuoc-ngot-202210311315510981.v202302081530.png" alt="Sua tuoi">
+                                    <span>Nước ngọt</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/9081/bhx/giay-ve-sinh-202212051502079595.v202302081530.png" alt="Sua tuoi">
+                                    <span>Giấy vệ sinh</span>
+                                </a>
+                                <a href="#">
+                                    <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/7462/285255/bhx/kem-chanh-magnolia-hachi-cay-60ml-202210041441194374_300x300.png" alt="Sua tuoi">
+                                    <span>Kem</span>
+                                </a>
+
+                            </div>
+                         </div>
+                         <!-- Products Meat, beef -->
+                         <div class="products-group-name">
+                            <span>THỊT HEO, BÒ</span> 
+                         </div>
+                         <div class="products">
+                            <div class="grid__row">
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228329/bhx/ba-roi-heo-cp-khay-500g-202205161737201496_300x300.jpg"
+                                            alt="Thịt ba rọi heo 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo ba rọi C.P khay 500g</h4>
+                                        <div class="products-item-price">56.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/cot-let-heo-cp-khay-500g-4-6-mieng-202301031119327135_300x300.jpg"
+                                            alt="Thịt cốt lết">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo cốt lết C.P khay 500g</h4>
+                                        <div class="products-item-price">85.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/242942/bhx/thit-heo-xay-cp-khay-500g-202205161734555050_300x300.jpg"
+                                            alt="Thịt heo xay">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo xay C.P khay 500g</h4>
+                                        <div class="products-item-price">80.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/226840/bhx/nac-dam-heo-cp-khay-300g-202205161734194124_300x300.jpg"
+                                            alt="Thịt nạc dâm">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt nạc dăm C.P khay 300g</h4>
+                                        <div class="products-item-price">76.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228333/bhx/suon-non-heo-cp-khay-500g-5-7-mieng-202210251610342134_300x300.jpg"
+                                            alt="Sườn non C.P 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Sườn non C.P khay 500g</h4>
+                                        <div class="products-item-price">105.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8139/223386/bhx/thit-bo-tai-uc-pacow-khay-250g-202111161730374818_300x300.jpg"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt bò tái Úc Pacow khay 500g</h4>
+                                        <div class="products-item-price">56.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/213845/bhx/thit-ba-roi-bo-thao-tien-foods-khay-300g-202210121449043843_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Ba rọi bò Mỹ Thảo Tiến khay 300g</h4>
+                                        <div class="products-item-price">126.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/286842/bhx/combo-thit-nuong-han-quoc-thao-tien-foods-hop-560g-202212141418408307_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Combo thịt bò nướng Thảo Tiến khay 560g</h4>
+                                        <div class="products-item-price">350.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8139/223389/bhx/bit-tet-dui-bo-uc-pacow-khay-250g-202111161728538316_300x300.jpg"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Bít tết đùi bò Úc Pacow khay 250g</h4>
+                                        <div class="products-item-price">150.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/286847/bhx/thit-chop-vai-bo-my-hot-pot-thao-tien-foods-khay-500g-202210121603427982_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt chóp vai bò Mỹ Thảo Tiến khay 500g</h4>
+                                        <div class="products-item-price">126.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>   
+                            </div>
+                         </div>
+                         <!-- Products Fish -->
+                         <div class="products-group-name">
+                            <span>CÁ TƯƠI</span> 
+                         </div>
+                         <div class="products">
+                            <div class="grid__row">
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228329/bhx/ba-roi-heo-cp-khay-500g-202205161737201496_300x300.jpg"
+                                            alt="Thịt ba rọi heo 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo ba rọi C.P khay 500g</h4>
+                                        <div class="products-item-price">56.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/cot-let-heo-cp-khay-500g-4-6-mieng-202301031119327135_300x300.jpg"
+                                            alt="Thịt cốt lết">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo cốt lết C.P khay 500g</h4>
+                                        <div class="products-item-price">85.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/242942/bhx/thit-heo-xay-cp-khay-500g-202205161734555050_300x300.jpg"
+                                            alt="Thịt heo xay">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt heo xay C.P khay 500g</h4>
+                                        <div class="products-item-price">80.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/226840/bhx/nac-dam-heo-cp-khay-300g-202205161734194124_300x300.jpg"
+                                            alt="Thịt nạc dâm">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt nạc dăm C.P khay 300g</h4>
+                                        <div class="products-item-price">76.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8781/228333/bhx/suon-non-heo-cp-khay-500g-5-7-mieng-202210251610342134_300x300.jpg"
+                                            alt="Sườn non C.P 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Sườn non C.P khay 500g</h4>
+                                        <div class="products-item-price">105.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>  
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8139/223386/bhx/thit-bo-tai-uc-pacow-khay-250g-202111161730374818_300x300.jpg"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt bò tái Úc Pacow khay 500g</h4>
+                                        <div class="products-item-price">56.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/213845/bhx/thit-ba-roi-bo-thao-tien-foods-khay-300g-202210121449043843_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Ba rọi bò Mỹ Thảo Tiến khay 300g</h4>
+                                        <div class="products-item-price">126.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/286842/bhx/combo-thit-nuong-han-quoc-thao-tien-foods-hop-560g-202212141418408307_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Combo thịt bò nướng Thảo Tiến khay 560g</h4>
+                                        <div class="products-item-price">350.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8139/223389/bhx/bit-tet-dui-bo-uc-pacow-khay-250g-202111161728538316_300x300.jpg"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Bít tết đùi bò Úc Pacow khay 250g</h4>
+                                        <div class="products-item-price">150.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div> 
+                                <div class="grid__column-5">
+                                    <!-- Product items -->
+                                    <div class="products-item">
+                                        <div class="box-img">
+                                            <img width="100%" height="100%" 
+                                            src="https://cdn.tgdd.vn/Products/Images/8400/286847/bhx/thit-chop-vai-bo-my-hot-pot-thao-tien-foods-khay-500g-202210121603427982_300x300.png"
+                                            alt="Thịt bò tái úc 500g">
+                                        </div>
+                                        <h4 class="products-item-name">Thịt chóp vai bò Mỹ Thảo Tiến khay 500g</h4>
+                                        <div class="products-item-price">126.000đ</div>
+                                        <button class="addtocart">CHỌN MUA</button>
+                                    </div>
+                                </div>   
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-4">
+                        <img src="./assets/img/walmartLogo.svg" alt="" class="footer-logo">
+                        <p class="footer__text">Website mua bán nhu yếu phẩm</p>
+                        <p class="footer__text">Nhập môn lập trình web - CT188</p>
+                        <p class="footer__text">Được tạo vào ngày trước tết</p>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__heading">Về địa chỉ</h3>
+                        <p class="footer__text">Được tạo bởi VSCode</p>
+                        <p class="footer__text">Đại Học Cần Thơ</p>
+                        <p class="footer__text">Trường CNTT-TT</p>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__heading">Hỗ Trợ Khách Hàng</h3>
+                        <p class="footer__text">email: tinb0212153@student.ctu.edu.vn</p>
+                        <p class="footer__text">zalo: 0909133539</p>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__heading">Nhóm 03</h3>
+                        <p class="footer__text">Đặng Trung Tín - B2012153</p>
+                        <p class="footer__text">dsdsdsdsdsdsđs - dsdsdsds</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+        </script>
+    </div>
+    <!-- Modal layout -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal-close js-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!-- Form Dang ky -->
+            <div class="auth-form-dangky js-form-dk">
+                <div class="modal__inner">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-small-dn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form-input" placeholder="Tạo tên đăng nhập/email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form-input" placeholder="Tạo mật khẩu">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form-input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-btn">
+                        <button class="btn btn--accept">ĐĂNG KÝ</button>
+                    </div>
+
+                    <div class="auth-form__rules">
+                        <p class="auth-form__rules-text">Bằng cách đăng ký tài khoản, bạn đã đồng ý với
+                            <a href="" class="auth-form__rules-link">Điều khoản sử dụng và Chính sách bảo mật</a> của Bachhoaxanh.com
+                        </p>
+                    </div>
+                    <div class="text-orform">
+                        <div class="text-or"><hr width="43%"> HOẶC <hr width="43%"></div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn-fb btn-with-icon"> 
+                                <i class="socials-icon fa-brands fa-facebook"></i>
+                                <span class="fb-text">Facebook</span>
+                        </a>
+                        <a href="" class="btn btn-gg btn-with-icon">
+                                <i class="socials-icon fa-brands fa-google"></i>
+                                <span class="gg-text">Google</span>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Form Đăng nhập -->
+            <div class="auth-form-dangnhap js-form-dn">
+                <div class="modal__inner">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-small-dk">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form-input" placeholder="Tạo tên đăng nhập/email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form-input" placeholder="Tạo mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-btn">
+                        <button class="btn btn--accept">ĐĂNG NHẬP</button>
+                    </div>
+
+                    <div class="forget-pass">Quên mật khẩu</div>
+                    <div class="text-orform">
+                        <div class="text-or"><hr width="43%"> HOẶC <hr width="43%"></div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn-fb btn-with-icon"> 
+                                <i class="socials-icon fa-brands fa-facebook"></i>
+                                <span class="fb-text">Facebook</span>
+                        </a>
+                        <a href="" class="btn btn-gg btn-with-icon">
+                                <i class="socials-icon fa-brands fa-google"></i>
+                                <span class="gg-text">Google</span>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btnDangKy = document.querySelector('.js-dangky');
+        const btnDangNhap = document.querySelector('.js-dangnhap');
+        const modal = document.querySelector('.js-modal');
+        const modalDangNhap = document.querySelector('.js-form-dn');
+        const modalDangKy = document.querySelector('.js-form-dk');
+        const smallbtnDangKy = document.querySelector('.js-small-dk');
+        const smallbtnDangNhap = document.querySelector('.js-small-dn');
+        const btnClose = document.querySelector('.js-modal-close');
+        function showModalDangKy() {
+            // Thêm class 'open'
+            modal.classList.add('open');
+            modalDangNhap.classList.add('hidedn');
+        }
+
+        function hideModal() {
+            // Loại bỏ class 'open'
+            modal.classList.remove('open');
+            modalDangNhap.classList.remove('hidedn');
+            modalDangKy.classList.remove('hidedk');
+        }
+
+        function openDangNhap() {
+            // Loại bỏ class 'open'
+            modalDangNhap.classList.remove('hidedn');
+            modalDangKy.classList.add('hidedk');
+
+        }
+
+        function openDangKy() {
+            // Loại bỏ class 'open'
+            modalDangKy.classList.remove('hidedk');
+            modalDangNhap.classList.add('hidedn');
+
+        }
+
+        function showModalDangNhap() {
+            // Thêm class 'open'
+            modal.classList.add('open');
+            modalDangKy.classList.add('hidedk');
+        }
+
+        btnDangKy.addEventListener('click',showModalDangKy);
+        btnDangNhap.addEventListener('click',showModalDangNhap);
+        smallbtnDangKy.addEventListener('click',openDangKy);
+        smallbtnDangNhap.addEventListener('click',openDangNhap);
+        btnClose.addEventListener('click',hideModal);
+    </script>
+</body>
+</html>
