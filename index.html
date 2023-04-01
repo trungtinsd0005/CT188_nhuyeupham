@@ -46,7 +46,7 @@
                         </li>
                     </ul>
     
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list js-add-dndk">
                         <li class="header__navbar-item header__notify-has">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fa-solid fa-bell"></i>
@@ -96,26 +96,28 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <!-- <li class="js-dangky header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="js-dangnhap header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
-                        <li class="header__navbar-item header__navbar-user">
+                        <li class="header__navbar-item">
+                            <li class="js-dangky header__navbar-item header__navbar-item--strong header__navbar-item--separate hide">Đăng ký</li>
+                            <li class="js-dangnhap header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
                             <i class="header__navbar-icon fa-solid fa-user"></i>
                             <span class="name-user">Tin</span>
                             
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">
-                                    <a href="">Tài Khoản Của Tôi</a>
+                                    <a href="#">Tài Khoản Của Tôi</a>
                                 </li>
 
                                 <li class="header__navbar-user-item">
-                                    <a href="">Đơn Đặt Hàng</a>
+                                    <a href="#">Đơn Đặt Hàng</a>
                                 </li>
 
-                                <li class="header__navbar-user-item">
-                                    <a href="">Đăng Xuất</a>
+                                <li onclick="logOut()" class="header__navbar-user-item logout">
+                                    <a href="#">Đăng Xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -138,7 +140,7 @@
         <div class="container">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="grid__column-2">
+                    <!-- <div class="grid__column-2">
                         <nav class="category">
                             <div class="category__heading">
                                 <i class="category__heading-icon fa-solid fa-bars"></i>
@@ -181,7 +183,7 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> -->
 
                     <div class="grid__column-10">
                          <div class="groupcate">
@@ -191,7 +193,7 @@
                                     <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/8781/bhx/thit-heo-cac-loai-202212051413082532.v202302081331.png" alt="Thit heo">
                                     <span>Thịt heo</span>
                                 </a>
-                                <a href="#">
+                                <a href="#catuoi">
                                     <img width="45%" height="45%" src="https://cdn.tgdd.vn/Products/Images/10298/bhx/rau-cu-trai-cay-202205261519146845.v202302081530.png" alt="Rau cu">
                                     <span>Rau củ</span>
                                 </a>
@@ -369,7 +371,7 @@
                             </div>
                          </div>
                          <!-- Products Fish -->
-                         <div class="products-group-name">
+                         <div id="catuoi" class="products-group-name">
                             <span>CÁ TƯƠI</span> 
                          </div>
                          <div class="products">
@@ -539,10 +541,6 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-
-        </script>
     </div>
     <!-- Modal layout -->
     <div class="modal js-modal">
@@ -561,18 +559,21 @@
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form-input" placeholder="Tạo tên đăng nhập/email">
+                            <input id="email" type="text" onblur="isRequired()" placeholder="Tạo email">
+                            <span class="message-notify-dndk"></span>
                         </div>
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form-input" placeholder="Tạo mật khẩu">
+                            <input id="password" type="password" onblur="isPassword()" placeholder="Tạo mật khẩu">
+                            <span class="message-notify-dndk"></span>
                         </div>
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form-input" placeholder="Nhập lại mật khẩu">
+                            <input id="passwordagain" type="password" onblur="correctPassword()" placeholder="Nhập lại mật khẩu">
+                            <span class="message-notify-dndk"></span>
                         </div>
                     </div>
 
                     <div class="auth-btn">
-                        <button class="btn btn--accept">ĐĂNG KÝ</button>
+                        <button class="btn btn--accept" onclick="signup()">ĐĂNG KÝ</button>
                     </div>
 
                     <div class="auth-form__rules">
@@ -584,7 +585,7 @@
                         <div class="text-or"><hr width="43%"> HOẶC <hr width="43%"></div>
                     </div>
                     <div class="auth-form__socials">
-                        <a href="" class="btn btn-fb btn-with-icon"> 
+                        <a href="https://www.facebook.com/" class="btn btn-fb btn-with-icon"> 
                                 <i class="socials-icon fa-brands fa-facebook"></i>
                                 <span class="fb-text">Facebook</span>
                         </a>
@@ -605,15 +606,17 @@
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form-input" placeholder="Tạo tên đăng nhập/email">
+                            <input type="text" id="emaildn" placeholder="Nhập email">
+                            <span class="message-notify-dndk"></span>
                         </div>
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form-input" placeholder="Tạo mật khẩu">
+                            <input type="text" id="passworddn" placeholder="Nhập mật khẩu">
+                            <span class="message-notify-dndk"></span>
                         </div>
                     </div>
 
                     <div class="auth-btn">
-                        <button class="btn btn--accept">ĐĂNG NHẬP</button>
+                        <button class="btn btn--accept" onclick="login()">ĐĂNG NHẬP</button>
                     </div>
 
                     <div class="forget-pass">Quên mật khẩu</div>
@@ -634,53 +637,8 @@
             </div>
         </div>
     </div>
-    <script>
-        const btnDangKy = document.querySelector('.js-dangky');
-        const btnDangNhap = document.querySelector('.js-dangnhap');
-        const modal = document.querySelector('.js-modal');
-        const modalDangNhap = document.querySelector('.js-form-dn');
-        const modalDangKy = document.querySelector('.js-form-dk');
-        const smallbtnDangKy = document.querySelector('.js-small-dk');
-        const smallbtnDangNhap = document.querySelector('.js-small-dn');
-        const btnClose = document.querySelector('.js-modal-close');
-        function showModalDangKy() {
-            // Thêm class 'open'
-            modal.classList.add('open');
-            modalDangNhap.classList.add('hidedn');
-        }
+    <script src="./main.js">
 
-        function hideModal() {
-            // Loại bỏ class 'open'
-            modal.classList.remove('open');
-            modalDangNhap.classList.remove('hidedn');
-            modalDangKy.classList.remove('hidedk');
-        }
-
-        function openDangNhap() {
-            // Loại bỏ class 'open'
-            modalDangNhap.classList.remove('hidedn');
-            modalDangKy.classList.add('hidedk');
-
-        }
-
-        function openDangKy() {
-            // Loại bỏ class 'open'
-            modalDangKy.classList.remove('hidedk');
-            modalDangNhap.classList.add('hidedn');
-
-        }
-
-        function showModalDangNhap() {
-            // Thêm class 'open'
-            modal.classList.add('open');
-            modalDangKy.classList.add('hidedk');
-        }
-
-        btnDangKy.addEventListener('click',showModalDangKy);
-        btnDangNhap.addEventListener('click',showModalDangNhap);
-        smallbtnDangKy.addEventListener('click',openDangKy);
-        smallbtnDangNhap.addEventListener('click',openDangNhap);
-        btnClose.addEventListener('click',hideModal);
     </script>
 </body>
 </html>

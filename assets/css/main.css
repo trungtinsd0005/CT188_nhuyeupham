@@ -85,7 +85,8 @@
 }
 
 .header__navbar-item {
-    margin-right: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
     position: relative;
 }
 
@@ -131,7 +132,7 @@
     display: block;
     border-left: 1px solid #fff;
     height: 16px;
-    right: -9px;
+    right: -6px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -330,7 +331,7 @@
 }
 
     /* Input Modal */
-.auth-form-input {
+.auth-form__group input {
     width: 100%;
     height: 40px;
     margin-top: 15px;
@@ -485,7 +486,7 @@
 
 .category {
     background-color: var(--white-color);
-    position: fixed;
+    /* position: fixed; */
 }
 
 .category__heading {

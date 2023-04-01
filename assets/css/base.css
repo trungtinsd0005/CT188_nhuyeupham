@@ -61,7 +61,8 @@ html {
 .grid__column-10 {
     padding-left: 7px;
     padding-right: 7px;
-    width: 83.3333%;
+    /* width: 83.3333%; */
+    width: 100%;
 }
 
 .category__heading {
@@ -123,5 +124,22 @@ html {
     cursor: pointer;
 }
 
+/* .auth-form__group:invalid{
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+} */
+.auth-form__group.invalid input {
+    border: solid 1px #f33a58;
+}
+
+.auth-form__group.invalid .message-notify-dndk {
+    color: #f33a58;
+}
+
+.auth-form__group.invalid .message-notify-pass {
+    color: #f33a58;
+}
 
 
