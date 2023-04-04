@@ -2,6 +2,9 @@
     height: 100px; 
     /* background-image:linear-gradient(0,#0A2647,#205295); */
     background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 500;
 }
 
 .header__navbar {
@@ -20,6 +23,10 @@
 .header__navbar-user:hover .header__navbar-user-menu {
     display: block;
     animation: fadeIn ease-in .2s;
+}
+
+.hidedisplay {
+    display: none;
 }
 
 .header__navbar-user-menu {
@@ -455,12 +462,12 @@
     cursor: pointer;
 }
 
-.header__cart {
+#header__cart {
     position: relative;
     cursor: pointer;
 }
 
-.number-cart {
+#number-cart {
     background-color: var(--sub-color);
     padding: 1px 4px;
     border-radius: 50%;
@@ -526,7 +533,7 @@
 .groupcate {
     display: block;
     overflow: hidden;
-    margin: 25px 0 25px 0;
+    margin: 115px 0 15px 0;
     background: #fff;
     border-radius: 4px;
 }
@@ -580,6 +587,19 @@
     padding-bottom: 8px;
 }
 
+@keyframes movetoCart {
+    from {
+        transform: translate(-220px, 100px);
+        width: 40px;
+        height: 40px;
+    }
+    to {
+        transform: translate(0, 0);
+        width: 5px;
+        height: 5px;
+    }
+}
+
 
 .box-img {
     display: block;
@@ -624,6 +644,7 @@
     font-weight: 400;
     background-color: var(--white-color);
     color: var(--primary-color);
+    /* color: red; */
     border: 1px solid var(--primary-color);
     border-radius: 2px;
     z-index: 1;
@@ -639,7 +660,7 @@
     position: absolute;
     top: 100%;
     right: 100%;
-    width: 30px;
+    width: 40px;
     height: 16px;
     border-radius: 50%;
     background-color: var(--primary-color);

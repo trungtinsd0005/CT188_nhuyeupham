@@ -22,7 +22,24 @@ html {
 }
 
 /* Responsive */
-
+/* @media (max-width: 760px) {
+    .grid {
+        width: 760px;
+        max-width: 100%;
+        margin: 0 auto;
+    } 
+    .grid__column-5 {
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 33%;
+    }
+    .grid__column-10 {
+        padding-left: 7px;
+        padding-right: 7px;
+        /* width: 83.3333%; */
+        /* width: 100%;
+    } */
+/* } */ 
 .grid {
     width: 1400px;
     max-width: 100%;
@@ -63,6 +80,24 @@ html {
     padding-right: 7px;
     /* width: 83.3333%; */
     width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid__column-5 {
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 33.333%;
+    }
+
+    .addtocart {
+        color: red;
+    }
 }
 
 .category__heading {

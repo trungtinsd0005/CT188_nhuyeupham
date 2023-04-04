@@ -110,7 +110,7 @@ function signup(e) {
     var username = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     if(formGroup[0].classList.contains('invalid') || formGroup[1].classList.contains('invalid') || formGroup[2].classList.contains('invalid')) {
-        alert("co loi kh dang ky dc");
+        alert("Đăng ký thất bại");
     }else {
         var user = {
             username: username,
@@ -123,10 +123,13 @@ function signup(e) {
     }
 }
 
+// Đăng nhập
 function login(e) {
     event.preventDefault();
     var username = document.getElementById('emaildn').value;
     var password = document.getElementById('passworddn').value;
+    var dangky = document.querySelector('.js-dangky');
+    var dangnhap = document.querySelector('.js-dangnhap');
     var user = localStorage.getItem(username);
     var data = JSON.parse(user);
     if((username == data.username) && (password == data.password)) {
@@ -136,10 +139,43 @@ function login(e) {
         formGroup[4].classList.remove('invalid');
         showMessage[4].innerText = '';
         modal.classList.remove('open');
-
+        dangky.remove();
+        dangnhap.classList.add('header__navbar-user');
+        dangnhap.innerHTML = `
+            <i class="header__navbar-icon fa-solid fa-user"></i>
+            <span class="name-user">${username}</span>
+            <ul class="header__navbar-user-menu">
+                <li onclick="logOut()" class="header__navbar-user-item logout">
+                    <a href="#">Đăng Xuất</a>
+                </li>
+            </ul>
+        `;
     }else {
         formGroup[3].classList.add('invalid');
         formGroup[4].classList.add('invalid');
         showMessage[4].innerText = 'Sai mật khẩu hoặc email';
     }
+}
+
+// Xử lí giỏ hàng
+var btnAddToCart = document.getElementsByClassName('addtocart');
+var numCart = document.getElementById('number-cart');
+var cartdiv = document.querySelector('.cart-icon');
+// Lấy từng nút button trong mảng
+for(let e of btnAddToCart) {
+    e.addEventListener('click', function() {
+        numCart.textContent++;
+        var x = document.createElement('div');
+        var parent = e.parentElement;
+        var child = parent.querySelector('.box-img');
+        var newChild = child.cloneNode(true);
+        newChild.style.animation = "movetoCart 0.8s ease";
+        numCart.appendChild(newChild);
+        // newChild.style.width = "10%";
+        // newChild.style.height = "10%";
+        setTimeout( e => {
+            newChild.style.display = "none";
+        },800);
+        
+    })
 }
