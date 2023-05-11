@@ -1,0 +1,389 @@
+{
+    "PRODUCTS": [
+        {
+            "code": "A1",
+            "idcategory": "0",
+            "productName": "Thịt heo ba rọi C.P khay 500ggg",
+            "price": "56000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "ba-roi-heo.jpg"
+        },
+        {
+            "code": "A2",
+            "idcategory": "0",
+            "productName": "Thịt heo cốt lết C.P khay 500g",
+            "price": "85000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "cot-let-heo.jpg"
+        },
+        {
+            "code": "A3",
+            "idcategory": "0",
+            "productName": "Thịt heo xay C.P khay 500g",
+            "price": "80000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "thit-heo-xay.jpg"
+        },
+        {
+            "code": "A4",
+            "idcategory": "0",
+            "productName": "Thịt nạc dăm C.P khay 300g",
+            "price": "76000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "nac-dam-heo.jpg"
+        },
+        {
+            "code": "A5",
+            "idcategory": "0",
+            "productName": "Sườn non C.P khay 500g",
+            "price": "105000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "suon-non-heo.jpg"
+        },
+        {
+            "code": "A6",
+            "idcategory": "0",
+            "productName": "Thịt heo ba rọi C.P khay 500ggg",
+            "price": "56000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "ba-roi-heo.jpg"
+        },
+    
+    
+        {
+            "code": "B1",
+            "idcategory": "1",
+            "productName": "Cá hường làm sạch 300g - 350g",
+            "price": "28200",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "ca-huong.jpg"
+        },
+        {
+            "code": "B2",
+            "idcategory": "1",
+            "productName": "Cá lăng làm sạch 1kg - 1.2kg",
+            "price": "263000",
+            "amount": "10",
+            "entry": "2023-04-23",
+            "image": "ca-lang.jpg"
+        },
+        {
+            "code": "B3",
+            "idcategory": "1",
+            "productName": "Cá nục làm sạch 500g",
+            "price": "47000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "ca-nuc.jpg"
+        },
+        {
+            "code": "B4",
+            "idcategory": "1",
+            "productName": "Cá tai tượng 1kg - 1kg3 (1-2 con)",
+            "price": "114000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "ca-tai-tuong.jpg"
+        },
+        {
+            "code": "B5",
+            "idcategory": "1",
+            "productName": "Cá trác 500g",
+            "price": "74000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "ca-trac.jpg"
+        },
+    
+        
+        {
+            "code": "C1",
+            "idcategory": "2",
+            "productName": "Cải thìa 4KFarm 500g",
+            "price": "9900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "cai-thia.jpg"
+        },
+        {
+            "code": "C2",
+            "idcategory": "2",
+            "productName": "Hành lá 100g",
+            "price": "7100",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "hanh-la.jpg"
+        },
+        {
+            "code": "C3",
+            "idcategory": "2",
+            "productName": "Nấm kim châm Hàn Quốc 150g",
+            "price": "14000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nam-kim-cham.jpg"
+        },
+        {
+            "code": "C4",
+            "idcategory": "2",
+            "productName": "Dưa leo 500g (3-5 trái)",
+            "price": "12400",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "dua-leo.jpg"
+        },
+        {
+            "code": "C5",
+            "idcategory": "2",
+            "productName": "Khoai tây 500g(3-7 củ)",
+            "price": "16000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "khoai-tay.jpg"
+        },
+    
+    
+        {
+            "code": "D1",
+            "idcategory": "3",
+            "productName": "Nước mắm Nam Ngư 900ml",
+            "price": "53000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-nam-ngu.jpg"
+        },
+        {
+            "code": "D2",
+            "idcategory": "3",
+            "productName": "Nước mắm cá cơm Hưng Thịnh 750ml",
+            "price": "83000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-hung-thinh.jpg"
+        },
+        {
+            "code": "D3",
+            "idcategory": "3",
+            "productName": "Nước mắm Maggi tự nhiên 490ml",
+            "price": "93000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-maggi.jpg"
+        },
+        {
+            "code": "D4",
+            "idcategory": "3",
+            "productName": "Nước mắm Nha Trang 510ml",
+            "price": "80000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-nha-trang.jpg"
+        },
+        {
+            "code": "D5",
+            "idcategory": "3",
+            "productName": "Nước mắm Thuận Phát 610ml",
+            "price": "50000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-thuan-phat.jpg"
+        },
+     
+        
+        {
+            "code": "E1",
+            "idcategory": "4",
+            "productName": "Thùng 24 ly mì Modern Lẩu Thái Tôm 65g",
+            "price": "180000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-modern.jpg"
+        },
+        {
+            "code": "E2",
+            "idcategory": "4",
+            "productName": "Thùng 30 gói mì Hảo Hảo tôm chua cay 75g",
+            "price": "100000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-hao-hao.jpg"
+        },
+        {
+            "code": "E3",
+            "idcategory": "4",
+            "productName": "Thùng 30 gói Mì trộn Omachi xốt phô mai 90g",
+            "price": "260000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-omachi.jpg"
+        },
+        {
+            "code": "E4",
+            "idcategory": "4",
+            "productName": "Thùng 30 gói mì Kokomi tôm chua cay 90g",
+            "price": "100000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-kokomi.jpg"
+        },
+        {
+            "code": "E5",
+            "idcategory": "4",
+            "productName": "Thùng 30 gói mì 3 Miền tôm chua cay 65g",
+            "price": "9300  0",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-3-mien.jpg"
+        },
+    
+    
+        {
+            "code": "F1",
+            "idcategory": "5",
+            "productName": "Thùng 24 bịch sữa ít đường Dutch Lady 180ml",
+            "price": "180000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-dutch.jpg"
+        },
+        {
+            "code": "F2",
+            "idcategory": "5",
+            "productName": "Thùng 48 hộp sữa tươi TH True Milk 180ml",
+            "price": "400000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-true-milk.jpg"
+        },
+        {
+            "code": "F3",
+            "idcategory": "5",
+            "productName": "Thùng 48 hộp sữa tươi Socola Nestle 180ml",
+            "price": "370000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-socola-nestle.jpg"
+        },
+        {
+            "code": "F4",
+            "idcategory": "5",
+            "productName": "Thùng 48 hộp sữa tươi có đường Vinamilk 220ml",
+            "price": "320400",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-vinamilk.jpg"
+        },
+        {
+            "code": "F5",
+            "idcategory": "5",
+            "productName": "Thùng 48 hộp sữa tươi có đường Kun 180ml",
+            "price": "260000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-kun.jpg"
+        },
+    
+    
+        {
+            "code": "G1",
+            "idcategory": "6",
+            "productName": "Trứng gà Happy Egg hộp 10 quả",
+            "price": "29900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-ga-happy-egg.jpg"
+        },
+        {
+            "code": "G2",
+            "idcategory": "6",
+            "productName": "Trứng gà QLEgg hộp 10 quả",
+            "price": "27100",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-ga-qlegg.jpg"
+        },
+        {
+            "code": "G3",
+            "idcategory": "6",
+            "productName": "Trứng gà 4KFarm hộp 6 quả",
+            "price": "24000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-ga-4kfarm.jpg"
+        },
+        {
+            "code": "G4",
+            "idcategory": "6",
+            "productName": "Trứng vịt cà cuống 4KFarm hộp 6 quả",
+            "price": "29900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-vit-4kfarm6.jpg"
+        },
+       {
+            "code": "G5",
+            "idcategory": "6",
+            "productName": "Trứng vịt 4KFarm hộp 10 quả",
+            "price": "29900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-vit-4kfarm10.jpg"
+        },
+    
+    
+        {
+            "code": "H1",
+            "idcategory": "7",
+            "productName": "6 lon nước ngọt Pepsi Cola Sleek 245ml",
+            "price": "49900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "pepsi.jpg"
+        },
+        {
+            "code": "H2",
+            "idcategory": "7",
+            "productName": "6 lon nước ngọt 7 Up vị chanh 245ml",
+            "price": "47100",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "7up.jpg"
+        },
+        {
+            "code": "H3",
+            "idcategory": "7",
+            "productName": "6 lon nước ngọt Coca Cola 235ml",
+            "price": "48000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "coca-cola.jpg"
+        },
+        {
+            "code": "H4",
+            "idcategory": "7",
+            "productName": "6 lon soda Schweppes 320ml",
+            "price": "40400",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "soda-schweppes.jpg"
+        },
+        {
+            "code": "H5",
+            "idcategory": "7",
+            "productName": "6 chai nước ngọt Sprite hương chanh 390ml",
+            "price": "46000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sprite.jpg"
+        }
+    ],
+    "ACCOUNTS": [],
+    "ORDERS": []
+}

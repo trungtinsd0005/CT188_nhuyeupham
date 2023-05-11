@@ -153,19 +153,77 @@ function login(e) {
     }else {
         formGroup[3].classList.add('invalid');
         formGroup[4].classList.add('invalid');
+        alert('Đăng nhập thất bại');
         showMessage[4].innerText = 'Sai mật khẩu hoặc email';
     }
 }
 
-// Xử lí giỏ hàng
-var btnAddToCart = document.getElementsByClassName('addtocart');
-var numCart = document.getElementById('number-cart');
-var cartdiv = document.querySelector('.cart-icon');
+
+
+// ----------------------------------------PRODUCTS-----------------------------
+// ==================== DATABASE ==========================
+let DATABASE = localStorage.getItem('DATABASE') ? JSON.parse(localStorage.getItem('DATABASE')) : {
+    PRODUCTS: [],
+    ACCOUNTS: [
+        // Set User Default role ADMIN
+        {
+            ID: generateUUIDV4(),
+            username: "Đinh Sỹ Hùng",
+            phoneNumber: "01672058923",
+            address: "Hải Châu Đà Nẵng",
+            email: "admin@gmail.com",
+            password: "123",
+            role: "Admin"
+        }
+    ],
+    ORDERS: []
+};
+
+localStorage.setItem('DATABASE', JSON.stringify(DATABASE));
+
+// Get table to use
+let PRODUCTS = DATABASE.PRODUCTS;
+let ACCOUNTS = DATABASE.ACCOUNTS;
+let ORDERS = DATABASE.ORDERS;
+
+let pork = document.getElementById('porkProduct');
+
+window.onload = loadProduct(PRODUCTS);
+
+function loadProduct(PRODUCTS) {
+    PRODUCTS.forEach(product => {
+        if(product.idcategory === "0") {
+            renderPorkProduct(product);
+        }
+    });
+}
+
+function renderPorkProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="AAA">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    pork.innerHTML += contents;
+}
+
+// ----------------------------------------ADD TO CART-----------------------------
+let btnAddToCart = document.getElementsByClassName('addtocart');
+let numCart = document.getElementById('number-cart');
+let cartdiv = document.querySelector('.cart-icon');
 // Lấy từng nút button trong mảng
 for(let e of btnAddToCart) {
     e.addEventListener('click', function() {
         numCart.textContent++;
-        var x = document.createElement('div');
         var parent = e.parentElement;
         var child = parent.querySelector('.box-img');
         var newChild = child.cloneNode(true);
@@ -176,6 +234,5 @@ for(let e of btnAddToCart) {
         setTimeout( e => {
             newChild.style.display = "none";
         },800);
-        
     })
 }

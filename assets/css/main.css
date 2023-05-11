@@ -576,7 +576,9 @@
     padding: 12px 18px;
     font-weight: 500;
     color: var(--white-color);
-    background-color: var(--bright-mid-blue);
+    /* background-color: #80D0C7; */
+    background-color: #8BC6EC;
+    
 }
 
 .products {
@@ -631,8 +633,8 @@
 }
 
 .products-item-price {
-    font-size: 1.4rem;
-    color: var(--primary-color);
+    font-size: 1.3rem;
+    color: #de2000;
     margin: 8px 0px;
 }
 
@@ -681,6 +683,7 @@
 /* footer */
 .footer {
     background-color: #297ece;
+    /* background-color: #373636; */
     border-top: 3px solid var(--sub-color);
 }
 
