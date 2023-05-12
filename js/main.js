@@ -185,7 +185,6 @@ localStorage.setItem('DATABASE', JSON.stringify(DATABASE));
 let PRODUCTS = DATABASE.PRODUCTS;
 let ACCOUNTS = DATABASE.ACCOUNTS;
 let ORDERS = DATABASE.ORDERS;
-
 let pork = document.getElementById('porkProduct');
 
 window.onload = loadProduct(PRODUCTS);
@@ -235,4 +234,24 @@ for(let e of btnAddToCart) {
             newChild.style.display = "none";
         },800);
     })
+}
+
+// ****************** Search ********************************
+let search = document.getElementById("search");
+search.addEventListener('input', actSearch);
+
+function actSearch() {
+    let searchInput = search.value;
+    let productCompare = PRODUCTS.filter(product => searchCompare(searchInput, product.productName));
+    pork.innerHTML = '';
+    productCompare.forEach(product => {
+        renderPorkProduct(product);
+    });
+}
+
+// Search Compare
+function searchCompare(searchInput, productName) {
+    let searchInputLower = searchInput.toLowerCase();
+    let productNameLower = productName.toLowerCase();
+    return productNameLower.includes(searchInputLower);
 }
