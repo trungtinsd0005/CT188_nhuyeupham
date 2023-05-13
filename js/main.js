@@ -185,6 +185,7 @@ localStorage.setItem('DATABASE', JSON.stringify(DATABASE));
 let PRODUCTS = DATABASE.PRODUCTS;
 let ACCOUNTS = DATABASE.ACCOUNTS;
 let ORDERS = DATABASE.ORDERS;
+
 let pork = document.getElementById('porkProduct');
 let fish = document.getElementById('fishProduct');
 let vegatable = document.getElementById('vegetableProduct');
@@ -193,6 +194,7 @@ let noodle = document.getElementById('noodleProduct');
 let milk = document.getElementById('milkProduct');
 let egg = document.getElementById('eggProduct');
 let softdrink = document.getElementById('softdrinkProduct');
+//let all_product = document.getElementById('all-product');
 
 window.onload = loadProduct(PRODUCTS);
 
@@ -213,10 +215,8 @@ function loadProduct(PRODUCTS) {
         }else if (product.idcategory === "6") {
             renderEggProduct(product);
         }else  renderSoftDrinkProduct(product);
-        
     });
 }
-
 function renderPorkProduct(product)  {
     let contents = `
         <div class="grid__column-5">
@@ -379,7 +379,7 @@ for(let e of btnAddToCart) {
     })
 }
 
-// ****************** Search ********************************
+// Search 
 let search = document.getElementById("search");
 search.addEventListener('input', actSearch);
 
