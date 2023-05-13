@@ -3,7 +3,7 @@
         {
             "code": "A1",
             "idcategory": "0",
-            "productName": "Thịt heo ba rọi C.P khay 500ggg",
+            "productName": "Thịt heo ba rọi C.P khay 500g",
             "price": "56000",
             "amount": "10",
             "entry": "2023-04-23",
@@ -48,11 +48,11 @@
         {
             "code": "A6",
             "idcategory": "0",
-            "productName": "Thịt heo ba rọi C.P khay 500ggg",
-            "price": "56000",
+            "productName": "Xương ống heo C.P khay 500ggg",
+            "price": "52000",
             "amount": "10",
             "entry": "2023-04-23",
-            "image": "ba-roi-heo.jpg"
+            "image": "xuong-ong-heo.jpg"
         },
     
     
@@ -101,6 +101,15 @@
             "entry": "2023-04-23",   
             "image": "ca-trac.jpg"
         },
+        {
+            "code": "B6",
+            "idcategory": "1",
+            "productName": "Cá cơm biển 500g",
+            "price": "36000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "ca-com-bien.jpg"
+        },
     
         
         {
@@ -147,6 +156,15 @@
             "amount": "10",
             "entry": "2023-04-23",   
             "image": "khoai-tay.jpg"
+        },
+        {
+            "code": "C6",
+            "idcategory": "2",
+            "productName": "Dưa hấu không hạt Long An",
+            "price": "9900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "dua-hau.jpg"
         },
     
     
@@ -195,6 +213,15 @@
             "entry": "2023-04-23",   
             "image": "nuoc-mam-thuan-phat.jpg"
         },
+        {
+            "code": "D6",
+            "idcategory": "3",
+            "productName": "Nước mắm nhĩ Thanh Hà 520ml",
+            "price": "53000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "nuoc-mam-thanh-ha.jpg"
+        },
      
         
         {
@@ -237,10 +264,19 @@
             "code": "E5",
             "idcategory": "4",
             "productName": "Thùng 30 gói mì 3 Miền tôm chua cay 65g",
-            "price": "9300  0",
+            "price": "93000",
             "amount": "10",
             "entry": "2023-04-23",   
             "image": "mi-3-mien.jpg"
+        },
+        {
+            "code": "E6",
+            "idcategory": "4",
+            "productName": "Mì xào khô Indomie Mi Goreng Rasa Iga Penyet vị sườn gói 80g",
+            "price": "56000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "mi-goreng.jpg"
         },
     
     
@@ -289,6 +325,15 @@
             "entry": "2023-04-23",   
             "image": "sua-kun.jpg"
         },
+        {
+            "code": "F6",
+            "idcategory": "5",
+            "productName": "5 bịch sữa tươi Dalatmilk 220ml",
+            "price": "33000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "sua-dalat-milk.jpg"
+        },
     
     
         {
@@ -336,6 +381,15 @@
             "entry": "2023-04-23",   
             "image": "trung-vit-4kfarm10.jpg"
         },
+       {
+            "code": "G6",
+            "idcategory": "6",
+            "productName": "Trứng vịt muối 4KFarm trứng 1 hộp 4 trứng",
+            "price": "32900",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "trung-vit-muoi-4kfarm.jpg"
+        },
     
     
         {
@@ -382,6 +436,15 @@
             "amount": "10",
             "entry": "2023-04-23",   
             "image": "sprite.jpg"
+        },
+        {
+            "code": "H6",
+            "idcategory": "7",
+            "productName": "6 chai nước ngọt fanta nho 1.5L",
+            "price": "119000",
+            "amount": "10",
+            "entry": "2023-04-23",   
+            "image": "fanta-huong-nho.jpg"
         }
     ],
     "ACCOUNTS": [],

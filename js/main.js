@@ -168,9 +168,9 @@ let DATABASE = localStorage.getItem('DATABASE') ? JSON.parse(localStorage.getIte
         // Set User Default role ADMIN
         {
             ID: generateUUIDV4(),
-            username: "Đinh Sỹ Hùng",
-            phoneNumber: "01672058923",
-            address: "Hải Châu Đà Nẵng",
+            username: "Đặng Trung Tín",
+            phoneNumber: "0833577005",
+            address: "Ninh Kiều Cần Thơ",
             email: "admin@gmail.com",
             password: "123",
             role: "Admin"
@@ -186,14 +186,34 @@ let PRODUCTS = DATABASE.PRODUCTS;
 let ACCOUNTS = DATABASE.ACCOUNTS;
 let ORDERS = DATABASE.ORDERS;
 let pork = document.getElementById('porkProduct');
+let fish = document.getElementById('fishProduct');
+let vegatable = document.getElementById('vegetableProduct');
+let fishsauce = document.getElementById('fishSauceProduct');
+let noodle = document.getElementById('noodleProduct');
+let milk = document.getElementById('milkProduct');
+let egg = document.getElementById('eggProduct');
+let softdrink = document.getElementById('softdrinkProduct');
 
 window.onload = loadProduct(PRODUCTS);
 
 function loadProduct(PRODUCTS) {
     PRODUCTS.forEach(product => {
-        if(product.idcategory === "0") {
+        if (product.idcategory === "0") {
             renderPorkProduct(product);
-        }
+        } else if (product.idcategory === "1") {
+            renderFishProduct(product);
+        }else if (product.idcategory === "2") {
+            renderVegatableProduct(product);
+        }else if (product.idcategory === "3") {
+            renderFishSauceProduct(product);
+        }else if (product.idcategory === "4") {
+            renderNoodleProduct(product);
+        }else if (product.idcategory === "5") {
+            renderMilkProduct(product);
+        }else if (product.idcategory === "6") {
+            renderEggProduct(product);
+        }else  renderSoftDrinkProduct(product);
+        
     });
 }
 
@@ -204,7 +224,7 @@ function renderPorkProduct(product)  {
                 <div class="box-img">
                     <img width="100%" height="100%" 
                     src="assets/img/${product.image}"
-                    alt="AAA">
+                    alt="THỊT HEO">
                 </div>
                 <h4 class="products-item-name">${product.productName}</h4>
                 <div class="products-item-price">${product.price}đ</div>
@@ -215,6 +235,129 @@ function renderPorkProduct(product)  {
     pork.innerHTML += contents;
 }
 
+function renderFishProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="CÁ TƯƠI">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    fish.innerHTML += contents;
+}
+
+function renderVegatableProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="RAU CỦ">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    vegatable.innerHTML += contents;
+}
+
+function renderFishSauceProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="NƯỚC MẮM">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    fishsauce.innerHTML += contents;
+}
+
+function renderNoodleProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="MÌ ĂN LIỀN">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    noodle.innerHTML += contents;
+}
+
+function renderMilkProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="SỮA TƯƠI">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    milk.innerHTML += contents;
+}
+function renderEggProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="TRỨNG">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    egg.innerHTML += contents;
+}
+function renderSoftDrinkProduct(product)  {
+    let contents = `
+        <div class="grid__column-5">
+            <div class="products-item">
+                <div class="box-img">
+                    <img width="100%" height="100%" 
+                    src="assets/img/${product.image}"
+                    alt="NƯỚC NGỌT">
+                </div>
+                <h4 class="products-item-name">${product.productName}</h4>
+                <div class="products-item-price">${product.price}đ</div>
+                <button class="addtocart">CHỌN MUA</button>
+            </div>
+        </div>
+    `;
+    softdrink.innerHTML += contents;
+}
 // ----------------------------------------ADD TO CART-----------------------------
 let btnAddToCart = document.getElementsByClassName('addtocart');
 let numCart = document.getElementById('number-cart');
